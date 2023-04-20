@@ -25,24 +25,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    public function livecasino()
-    {
-        return view('livecasino');
-    }
-
-    public function slots()
-    {
-        return view('slots');
-    }
-
-    public function sports()
-    {
-        return view('sports');
-    }
-
-    public function fishing()
-    {
-        return view('fishing');
-    }
 }

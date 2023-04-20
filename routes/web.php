@@ -21,6 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+//games
+Route::get('/live-casino', [App\Http\Controllers\HomeController::class, 'livecasino']);
+Route::get('/slots', [App\Http\Controllers\HomeController::class, 'slots']);
+Route::get('/sports', [App\Http\Controllers\HomeController::class, 'sports']);
+Route::get('/fishing', [App\Http\Controllers\HomeController::class, 'fishing']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
