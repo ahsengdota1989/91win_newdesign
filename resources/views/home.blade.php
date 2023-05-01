@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>91WIN</title>
-
+    <title>91Win | Online Casino Malaysia | Live Casino Malaysia</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     
-    <!-- Bootstrap Icons CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" integrity="sha384-Pu3j6JoCIBeFW9M2gAKsa/ScMwJM8/yojNRALvlGggI1DpEVNhnCAzHG/t27Y5Ot" crossorigin="anonymous"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
         .white-font {
@@ -187,10 +187,10 @@
                                     <img src="images/banners/banner_3.png" class="d-block w-100" alt="trusted-online-casino-malaysia">
                                 </div> -->
                                 <div class="carousel-item active">
-                                    <img src="images/banners/banner_1.jpg" class="d-block w-100" alt="trusted-online-casino-malaysia">
+                                    <img src="public/images/banners/banner_1.jpg" class="d-block w-100" alt="trusted-online-casino-malaysia">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/banners/banner_2.jpg" class="d-block w-100" alt="trusted-online-casino-malaysia">
+                                    <img src="public/images/banners/banner_2.jpg" class="d-block w-100" alt="trusted-online-casino-malaysia">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -205,13 +205,13 @@
                     </div>
                 </div>
 
-                <div class="row video-section">
+                <div class="row video-section" style="padding-top:20px;padding-bottom:20px">
 
                     <span class="page-title" style="padding-bottom:20px">Popular Games</span>
 
                     <div class="col-2">
                         <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
+                            <img src="images/games/lc-evo-icon.png" class="img-fluid" alt="">
                             <div class="overlay">
                                 <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
                             </div>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="col-2">
                         <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
+                            <img src="images/games/lc-ag-icon.png" class="img-fluid" alt="">
                             <div class="overlay">
                                 <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
                             </div>
@@ -227,7 +227,7 @@
                     </div>
                     <div class="col-2">
                         <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
+                            <img src="images/games/lc-ab-icon.png" class="img-fluid" alt="">
                             <div class="overlay">
                                 <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
                             </div>
@@ -235,7 +235,7 @@
                     </div>
                     <div class="col-2">
                         <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
+                            <img src="images/games/lc-pt-icon.png" class="img-fluid" alt="">
                             <div class="overlay">
                                 <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
                             </div>
@@ -243,7 +243,7 @@
                     </div>
                     <div class="col-2">
                         <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
+                            <img src="images/games/lc-pp-icon.png" class="img-fluid" alt="">
                             <div class="overlay">
                                 <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
                             </div>
@@ -251,7 +251,7 @@
                     </div>
                     <div class="col-2">
                         <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
+                            <img src="images/games/lc-sexy-icon.png" class="img-fluid" alt="">
                             <div class="overlay">
                                 <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
                             </div>
@@ -260,56 +260,15 @@
 
                 </div>
 
-                <div class="row video-section" style="padding-top:20px">
+                <div class="row video-section">
 
-                    <span class="page-title" style="padding-bottom:20px">All Games</span>
+                    <div class="col-8" style="background-color: #17011f;border-radius:35px">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/fOCncfbsruI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
 
-                    <div class="col-2">
-                        <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="image-container">
-                            <img src="https://91win88.com/new_design/images/microgaming.png" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <a href="#" class="play-button"><button class="btn btn-sm btn-primary" style="background-color:#640a74;width:100px">PLAY</button></a>
-                            </div>
+                    <div class="col-4 jackpot-section" style="background-color: #17011f;border-radius:35px">
+                        <div class="row">
+                            <center><img src="public/images/total-jackpot.png" class="img-fluid"></center>
                         </div>
                     </div>
 

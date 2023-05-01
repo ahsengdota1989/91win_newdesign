@@ -8,11 +8,30 @@
 <div class="col-4 top-header-name">
     <div class="top-header-name-content">
         <div class="top-wallet-balance" style="background-color: transparent;">
-            <span style="position: absolute;color: gray;top: 0px;">Welcome Glen!</span>
+            <span style="position: absolute;color: gray;top: 0px;">Welcome {{Auth::User()->name}}!</span>
             <br>
-            <span style="position: absolute;color: gray;top: 20px;">Wallet Balance : MYR 1,120 </span>
+            <span style="position: absolute;color: gray;top: 20px;">Wallet Balance : <span id="main-wallet-balance">Loading...</span></span>
         </div>
     </div>
 
 </div>
+
+<script type="text/javascript">
+    mainwallet();
+
+    function mainwallet() {
+        $.ajax({
+            type: "post",
+            url: "mainwallet",
+            headers:
+            {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+            },
+            success: function(data)
+            {
+                $("#main-wallet-balance").html(data);
+            }
+        });
+    }
+</script>
 
